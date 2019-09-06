@@ -1,37 +1,10 @@
 ## Adaptive Futures
 
-You can use the [editor on GitHub](https://github.com/adaptivefutures/seriousgames/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+*Adaptive Futures* is a 'serious game' designed to introduce players to community-level decision-making and climate change adaptation. The research used to produce the game was conducted jointly through [[NIWA Taihoro Nukurangi|http://www.niwa.co.nz]] and [[Manaaki Whenua Landcare Research|http://www.landcareresearch.co.nz]], and funded by the [[Natural Hazards Research Platform|http://www.naturalhazards.org.nz]]. The game is programmed using the [[Twine|http://twinery.org]] platform, which combines visual and in-built coding elements with CSS and Javascript to write non-linear 'stories'. The project is published to HTML and hosted on a remote server.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The objective of the game is to protect the Seaview community from the adverse effects of climate change. Doing this will require the player to take actions to adapt to these effects, and their ability to take action depends on support from the community. Maintaining that support means that the player will need to build trust with community members, who experience the effects of climate change differently depending on their own values and location within the coastal space. Therefore, the game requires the player to balance the wishes of the community with the need to mitigate the immediate and long-term effects of climate change.
 
-### Markdown
+Different adaptation strategies can be employed which will mitigate the effects of sea-level rise and storm intensity on the community. These include renourishing beaches, building seawalls, and relocating segments of the community. Each of these strategies are described in the game so players can make informed decisions about the actions they can take. Each of these actions requires sufficient funds, and selecting some options may constrain the player's capacity to use other options.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The game is populated by non-player characters (NPCs), each with a location, back story, interests, and values. As the game progresses, NPCs will react to their  adaptation strategies. The willingness of each NPC is determined by their *attitude matrix* (see below), defined by two variables: trust and satisfaction. The actions of the player will affect an NPC's trust (e.g. responding to NPC requests increases trust), while the local conditions experienced by the NPC will affect it's satisfaction (e.g. local flooding decreases NPC satisfaction).
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/adaptivefutures/seriousgames/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
