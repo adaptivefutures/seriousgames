@@ -232,12 +232,12 @@ Macro.add('autopopup', {
 });
 
 </script><tw-tag name="Bug" color="green"></tw-tag>,<tw-tag name="Need-Image" color="red"></tw-tag>,<tw-tag name="Need-image" color="red"></tw-tag>,<tw-tag name="Need-images" color="red"></tw-tag><tw-passagedata pid="1" name="Intro" tags="Minor-Update" position="227,2" size="100,100">[img[https://adaptivefutures.github.io/seriousgames/images/landing_image.png][Intro1]]
-[[About the game|How it works]]  |  [[Credits|Credits]] |  [[Settings|Settings]] 
+[[About the game|How it works]]  |  [[Credits|Credits]] |  [[Settings|Settings]] | [[Pre-game survey|https://docs.google.com/forms/d/e/1FAIpQLSfwb3Wo49qCwJ9uNk7M4mfliJWMPXEokI6oRcSsbbLFN_TC4Q/viewform?usp=sf_link]]
 
 &lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Turn" tags="Major-Update two-panel" position="801,1" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Turn" tags="Major-Update two-panel" position="801,0" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left&quot;&gt;&lt;span class=&quot;h1&quot;&gt;Seaview $YEAR&lt;/span&gt;
 &lt;&lt;if $MAP == 0&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_0.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 1&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_1.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 2&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_2.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 3&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_3.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 4&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 5&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_5.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 6&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_6.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 7&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_7.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 8&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_a.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 9&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_a.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 10&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_small.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 11&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_large.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 12&gt;&gt;&lt;img src=img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_b.jpg width=400 height=400&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;
 In the last 10 years you experienced $SEVEREWEATHER years of severe weather.&lt;&lt;endif&gt;&gt;  
@@ -256,7 +256,7 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 &lt;&lt;if $WEHI_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail.jpg][Wehi]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail_red.jpg][Wehi]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $TAYLOR_LVL &gt;= 2&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_grey.jpg][Taylor]]&lt;&lt;elseif $TAYLOR_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail.jpg][Taylor]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_red.jpg][Taylor]]&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $RILEY_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail.jpg][Riley]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail_red.jpg][Riley]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $DANA_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail.jpg][Dana]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail_red.jpg][Dana]]&lt;&lt;endif&gt;&gt;
 
-[[Make some decisions|Decisions]]&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($KIM_CONT + $FERN_CONT + $WEHI_CONT + $TAYLOR_CONT + $RILEY_CONT + $DANA_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;else&gt;&gt;[[You&#39;ve reached the end of the game.|Summary]]&lt;&lt;endif&gt;&gt;
+[[Make some decisions|Decisions]]&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($KIM_CONT + $FERN_CONT + $WEHI_CONT + $TAYLOR_CONT + $RILEY_CONT + $DANA_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;else&gt;&gt;[[You&#39;ve reached the end of the game.|End]]&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
@@ -272,23 +272,35 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 
 
 
-</tw-passagedata><tw-passagedata pid="3" name="CheckConditions" tags="" position="640,198" size="100,100">/*This &#39;check&#39; passage determines the number of severe weather events during the intervening ten years between turns. This is done by comparing random probability draws between 0 and 99 for each year against a changing probability of storm occurrence (STORMPROB). If the random value is less than that probability, then a severe weather event occurs, increasing the count (SEVEREWEATHER) for that turn.*/&lt;&lt;set  $SEVEREWEATHER = 0&gt;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="CheckConditions" tags="" position="640,197" size="100,100">/*This &#39;check&#39; passage determines the number of severe weather events during the intervening ten years between turns. This is done by comparing random probability draws between 0 and 99 for each year against a changing probability of storm occurrence (STORMPROB). If the random value is less than that probability, then a severe weather event occurs, increasing the count (SEVEREWEATHER) for that turn.*/&lt;&lt;set  $SEVEREWEATHER = 0&gt;&gt;
 &lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 0.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;
 
 &lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.2s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.4s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.6s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&amp;emsp;&lt;&lt;if ( random(0,99) &lt; $STORMPROB )&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/severe_cards/severe&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;set  $SEVEREWEATHER += 1&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $YEARFILE = &quot;http://adaptivefutures.github.io/seriousgames/images/normal_cards/normal&quot; + $YEAR + &quot;.jpg&quot;&gt;&gt;&lt;img class=&quot;image-object anim-object active&quot; id=&quot;image-object&quot; @src=$YEARFILE style=&quot;animation: 0.45s ease-out 1.8s 1 normal both running slide-in-br; width:150px;height:200px;&quot;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $YEAR +=1&gt;&gt;&lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN]&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;div id=fadeelement&gt;[[See how this has affected your waterfront...|UpdateOutcomes]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="End" tags="" position="203,341" size="100,100">Thank you for playing! &lt;&lt;click &quot;Play again?&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.restart()&lt;&lt;/script&gt;&gt;&lt;&lt;/click&gt;&gt; Or [[take a short survey|https://forms.gle/EnwWDsF7nrDys3GM7]] about your experience?
-
-This project was funded by:
-
-&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=http://adaptivefutures.github.io/seriousgames/images/NatHaz%20logo.png&gt;&lt;/a&gt;
-
-Collaborating institutions:
+&lt;div id=fadeelement&gt;[[See how this has affected your waterfront...|UpdateOutcomes]]&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="End" tags="" position="397,332" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;div id=&quot;left&quot;&gt;Thank you for playing! Please [[click here take our short post-game survey|https://forms.gle/EnwWDsF7nrDys3GM7]] about your experience or &lt;&lt;click &quot;click here to play again&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.restart()&lt;&lt;/script&gt;&gt;&lt;&lt;/click&gt;&gt;. 
+&lt;&lt;set $TURNOUTCOME.push($BUDGET)&gt;&gt;
+&lt;&lt;set $TURNOUTCOME.push($BUDGETTEMP)&gt;&gt;&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
+&#39;&#39;Play Summary&#39;&#39;
+|YEAR|BUDGET ($$k)|EXPENDITURES ($$k)|SCORE|
+|2019|$TURNOUTCOME[0]|$TURNOUTCOME[1]|&lt;&lt;print Math.round(($TURNOUTCOME[2]/18)*100)&gt;&gt;%|
+|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;2029&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;$TURNOUTCOME[3]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;$TURNOUTCOME[4]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2029&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[5]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;2039&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[6]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;$TURNOUTCOME[7]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2039&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[8]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;2049&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;$TURNOUTCOME[9]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;$TURNOUTCOME[10]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2049&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[11]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;2059&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[12]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;$TURNOUTCOME[13]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2059&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[14]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;2069&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;$TURNOUTCOME[15]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;$TURNOUTCOME[16]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2069&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[17]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;2079&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;$TURNOUTCOME[18]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;$TURNOUTCOME[19]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2079&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[20]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;2089&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;$TURNOUTCOME[21]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;$TURNOUTCOME[22]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2089&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[23]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;2099&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;$TURNOUTCOME[24]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;$TURNOUTCOME[25]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2099&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[26]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;2109&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;$TURNOUTCOME[27]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;$TURNOUTCOME[28]&lt;&lt;endif&gt;&gt;|&lt;&lt;if $YEAR &gt;= 2109&gt;&gt;&lt;&lt;print Math.round(($TURNOUTCOME[29]/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
+&lt;/div&gt;
+&lt;div id=&quot;right&quot;&gt;&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=http://adaptivefutures.github.io/seriousgames/images/NatHaz%20logo.png&gt;&lt;/a&gt;
 
 &lt;a href=&quot;http://www.niwa.co.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/NIWA_LOGO_2.png width=300 height=110&gt;&lt;/a&gt;
  
 &lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/landcare%20logo.PNG&gt;&lt;/a&gt;
-
-</tw-passagedata><tw-passagedata pid="5" name="StoryCaption" tags="" position="22,5" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
+&lt;/div&gt;
+&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="5" name="StoryCaption" tags="" position="22,4" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
 | !Sea level:|&amp;nbsp;|+$SEALEVEL m|
 | !Budget:|&amp;nbsp;|$$$BUDGET k|
 | !Approval Rating:|&amp;nbsp;|&lt;&lt;if $SCORE &lt; 3&gt;&gt;&lt;span class=&quot;negativeText&quot;&gt;&lt;&lt;print Math.round(($SCORE/18)*100)&gt;&gt;%&lt;/span&gt;&lt;&lt;else&gt;&gt;&lt;&lt;print Math.round(($SCORE/18)*100)&gt;&gt;%&lt;&lt;endif&gt;&gt;|
@@ -518,24 +530,7 @@ Or you can
 
 
 [[Back to status page|Turn]] or [[see what happens in the next 10 years...|Precheck]]
-</tw-passagedata><tw-passagedata pid="8" name="Summary" tags="Major-Update" position="398,348" size="100,100">
-&lt;span class=&quot;h1&quot;&gt;Summary&lt;/span&gt;&lt;&lt;set $TURNOUTCOME.push($BUDGET)&gt;&gt;
-&lt;&lt;set $TURNOUTCOME.push($BUDGETTEMP)&gt;&gt;&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
-
-|YEAR|BUDGET ($$k)|EXPENDITURES ($$k)|SCORE|
-|2019|$TURNOUTCOME[0]|$TURNOUTCOME[1]|$TURNOUTCOME[2]|
-|2029|$TURNOUTCOME[3]|$TURNOUTCOME[4]|$TURNOUTCOME[5]|
-|2039|$TURNOUTCOME[6]|$TURNOUTCOME[7]|$TURNOUTCOME[8]|
-|2049|$TURNOUTCOME[9]|$TURNOUTCOME[10]|$TURNOUTCOME[11]|
-|2059|$TURNOUTCOME[12]|$TURNOUTCOME[13]|$TURNOUTCOME[14]|
-|2069|$TURNOUTCOME[15]|$TURNOUTCOME[16]|$TURNOUTCOME[17]|
-|2079|$TURNOUTCOME[18]|$TURNOUTCOME[19]|$TURNOUTCOME[20]|
-|2089|$TURNOUTCOME[21]|$TURNOUTCOME[22]|$TURNOUTCOME[23]|
-|2099|$TURNOUTCOME[24]|$TURNOUTCOME[25]|$TURNOUTCOME[26]|
-|2109|$TURNOUTCOME[27]|$TURNOUTCOME[28]|$TURNOUTCOME[29]|
-
-
-[[End]]</tw-passagedata><tw-passagedata pid="9" name="Do Nothing" tags="Minor-Update" position="1127,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Do Nothing" tags="Minor-Update" position="1127,450" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Doing Nothing&lt;/span&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Do nothing (take no adaptation action)|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;| |This option allows nature to dictate what happens and leaves individuals and business to make their own decisions on how to respond to sea level rise and storm events. Doing nothing can be a part of a longer term strategy ……..or not.|
@@ -549,7 +544,7 @@ Or you can
 |Cost| |$0|
 
 
-</tw-passagedata><tw-passagedata pid="10" name="Precheck" tags="" position="805,345" size="100,100">/*This &#39;pre-check&#39; passage determines if the player has enough money to proceed with their selected adaptations, if they have tried to both consult and adapt at the same time, or if they have not consulted before attempting to relocate. If they meet the criteria, then they proceed directly to the &#39;check conditions&#39; passage. If not, then they are informed and asked to return to the &#39;decisions&#39; passage.)*/
+</tw-passagedata><tw-passagedata pid="9" name="Precheck" tags="" position="805,346" size="100,100">/*This &#39;pre-check&#39; passage determines if the player has enough money to proceed with their selected adaptations, if they have tried to both consult and adapt at the same time, or if they have not consulted before attempting to relocate. If they meet the criteria, then they proceed directly to the &#39;check conditions&#39; passage. If not, then they are informed and asked to return to the &#39;decisions&#39; passage.)*/
 
 &lt;&lt;if $SEAWALLTEMP1 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $SEAWALLCOST1&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;C&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $SEAWALLTEMP2 == true&gt;&gt;&lt;&lt;set $BUDGETTEMP += $SEAWALLCOST2&gt;&gt;&lt;&lt;set $ACTIONLIST.push(&quot;C&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
@@ -560,7 +555,7 @@ Or you can
 
 &lt;&lt;if ($SEAWALLTEMP1 == false) and ($SEAWALLTEMP2 == false) and ($BEACHNOURISHTEMP == false) and ($RETREATTEMP1 == false) and ($RETREATTEMP2 == false)&gt;&gt; and ($PUBLICCONSULTTEMP == false) &lt;&lt;set $ACTIONLIST.push(&quot;A&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;if $BUDGETTEMP &gt; $BUDGET&gt;&gt;Your budget is currently $BUDGET, but your expenditures for this round are $ $BUDGETTEMP. Please revise your [[decisions|Reset]] to stay within budget.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == true or $SEAWALLTEMP2 == true or $BEACHNOURISHTEMP == true or $RETREATTEMP1 == true or $RETREATTEMP2 == true)&gt;&gt;You cannot engage in public consultation and construct adaptation measures in the same turn. Please revise your [[decisions|Reset]] to choose either consultation or adaptations.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == false or $SEAWALLTEMP2 == false or $BEACHNOURISHTEMP == false or $RETREATTEMP1 == false or $RETREATTEMP2 == false)&gt;&gt;&lt;&lt;goto Consultation&gt;&gt;&lt;&lt;elseif $RETREATTEMP1 == true and ($KIM_CONSULT == false or $DANA_CONSULT == false)&gt;&gt;&lt;&lt;goto NoBizMove&gt;&gt;&lt;&lt;elseif $RETREATTEMP2 == true and ($WEHI_CONSULT == false or $RILEY_CONSULT == false or $FERN_CONSULT == false)&gt;&gt;&lt;&lt;goto NoResMove&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto CheckConditions&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Install short seawall" tags="" position="999,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
+&lt;&lt;if $BUDGETTEMP &gt; $BUDGET&gt;&gt;Your budget is currently $BUDGET, but your expenditures for this round are $ $BUDGETTEMP. Please revise your [[decisions|Reset]] to stay within budget.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == true or $SEAWALLTEMP2 == true or $BEACHNOURISHTEMP == true or $RETREATTEMP1 == true or $RETREATTEMP2 == true)&gt;&gt;You cannot engage in public consultation and construct adaptation measures in the same turn. Please revise your [[decisions|Reset]] to choose either consultation or adaptations.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == false or $SEAWALLTEMP2 == false or $BEACHNOURISHTEMP == false or $RETREATTEMP1 == false or $RETREATTEMP2 == false)&gt;&gt;&lt;&lt;goto Consultation&gt;&gt;&lt;&lt;elseif $RETREATTEMP1 == true and ($KIM_CONSULT == false or $DANA_CONSULT == false)&gt;&gt;&lt;&lt;goto NoBizMove&gt;&gt;&lt;&lt;elseif $RETREATTEMP2 == true and ($WEHI_CONSULT == false or $RILEY_CONSULT == false or $FERN_CONSULT == false)&gt;&gt;&lt;&lt;goto NoResMove&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto CheckConditions&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="Install short seawall" tags="" position="999,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall (rock revetment)|
 |&amp;emsp;| | |
@@ -598,7 +593,7 @@ Or you can
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
 
-</tw-passagedata><tw-passagedata pid="12" name="Install high seawall" tags="Major-update" position="1124,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Install high seawall" tags="Major-update" position="1124,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall (rock revetment)|
 |&amp;emsp;| | |
@@ -632,7 +627,7 @@ Or you can
 //
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
-</tw-passagedata><tw-passagedata pid="13" name="Relocate shorefront commercial area" tags="Major-Update" position="1002,330" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the shorefront commercial area&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Relocate shorefront commercial area" tags="Major-Update" position="1002,330" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the shorefront commercial area&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/Islington.JPG style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of shorefront businesses|
 |&amp;emsp;| | |
@@ -678,7 +673,7 @@ Photo: [[Islington Fish &amp; Chips|http://ketechristchurch.peoplesnetworknz.inf
 //
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
-</tw-passagedata><tw-passagedata pid="14" name="Relocate coastal residential area" tags="Major-update" position="1122,331" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="13" name="Relocate coastal residential area" tags="Major-update" position="1122,331" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/Moving_house.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of coastal residents|
@@ -701,7 +696,7 @@ Once this relocation stage is complete the community is no longer at risk from t
 |&#39;&#39;Cost&#39;&#39;|&amp;emsp;|$RETREATCOST2 k|
 Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1820344
 
-</tw-passagedata><tw-passagedata pid="15" name="Beach renourishment" tags="" position="1004,212" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Beach Nourishment&lt;/span&gt;
+</tw-passagedata><tw-passagedata pid="14" name="Beach renourishment" tags="" position="1004,212" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Beach Nourishment&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/beach-nourishment2.jpg&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Beach re-nourishment is simply adding sand to the beach to replace that which was lost through erosion.|
 |&amp;emsp;| | |
@@ -730,7 +725,7 @@ Opposition from the communities where sand is extracted – they believe its aff
 Complains about sand blowing through town during storms
 
 Round prior to failure sand dune are showing signs of failure and the beach is higher than the park  storms stating to overtop the beach and damage the park
-*/</tw-passagedata><tw-passagedata pid="16" name="Kim" tags="" position="1396,0" size="100,100">&lt;span class=&quot;h1&quot;&gt;Kim the Fish &amp; Chips Shop Owner&lt;/span&gt;
+*/</tw-passagedata><tw-passagedata pid="15" name="Kim" tags="" position="1396,0" size="100,100">&lt;span class=&quot;h1&quot;&gt;Kim the Fish &amp; Chips Shop Owner&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/kim.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Kim&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutkim&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutkim&quot; class=&quot;hidden&quot;&gt;Kim is a small business owner. She and her husband run a restaurant called ‘Fush n Chups’ located on the main road facing the beach and park. The shop backs onto a courtyard that has seating available for customers. This area is prone to fill up with water during flood events. Kim is primarily focused on the stability of her business (financial capital), although the human, natural and social capitals are peripherally important due to their influence on the stability of the business. &lt;/div&gt;
 
@@ -754,7 +749,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.KIM to $KIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Fern" tags="" position="1391,111" size="100,100">&lt;span class=&quot;h1&quot;&gt;Fern the Activist&lt;/span&gt;
+&lt;&lt;set $CONSULT.KIM to $KIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="16" name="Fern" tags="" position="1391,111" size="100,100">&lt;span class=&quot;h1&quot;&gt;Fern the Activist&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/fern.JPG style=&quot;width:300px;height:300px;&quot;&gt;&lt;&lt;if $FERN_TRUST == 1&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST * $FERN_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST + $FERN_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $FERN_SCORE -= 1&gt;&gt;
 &lt;&lt;click &quot;Click here to learn more about Fern&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutfern&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutfern&quot; class=&quot;hidden&quot;&gt;Fern works part-time for a local community group, and is a lifetime member of [[Forest &amp; Bird|https://www.forestandbird.org.nz/]]. She has grown up in the area, appreciative of the small town feel, and proximity to the ocean. She has two small children, and her partner works in construction. They own a modest home on the edge of town. The property has a mortgage on it, and they hope to have paid it off prior to retirement. Fern values the aesthetics of the location, as well as the the biodiversity values (“I love to hear the sound of songbirds in the morning”) and she is familiar with the concept of ecosystem services, and believes that there needs to be a better costing of the environmental impacts of development. She is in favour of some sort of emissions trading scheme as a way to mitigate NZ’s emissions, is anxious about the future her children will inherit, and believes that adaptation is a central part of responding to climate change.&lt;/div&gt;
 
@@ -770,7 +765,7 @@ FERN&#39;S STATUS: &lt;&lt;if $FERN_SCORE == 0&gt;&gt;OUTRAGED&lt;&lt;elseif $FE
 
 
 /*Fern is primarily focused on natural and social capital (friends and family, and the sense of community) are most important to her. She and her family live modestly, and place am emphasis on physical, social and mental well-being over more money in the bank. 
-Fern will have certain preferences regarding response to SLR and adaptation options. Her response to various events will draw from the range of possible responses below, with weighting applied for her particular character (i.e. she is more concerned about natural capital than she is about financial capital).*/</tw-passagedata><tw-passagedata pid="18" name="UpdateNPCStatus" tags="" position="496,501" size="100,100">&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
+Fern will have certain preferences regarding response to SLR and adaptation options. Her response to various events will draw from the range of possible responses below, with weighting applied for her particular character (i.e. she is more concerned about natural capital than she is about financial capital).*/</tw-passagedata><tw-passagedata pid="17" name="UpdateNPCStatus" tags="" position="496,501" size="100,100">&lt;&lt;set $TURNOUTCOME.push($SCORE)&gt;&gt;
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
 /*Determine KIM&#39;s response set*/
@@ -1390,7 +1385,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 &lt;&lt;endif&gt;&gt;
 
 
-&lt;&lt;set $TURN += 1&gt;&gt;&lt;&lt;set $STORMPROB += 3&gt;&gt;&lt;&lt;set $SCORE = ($KIM_SCORE + $FERN_SCORE + $WEHI_SCORE + $TAYLOR_SCORE + $RILEY_SCORE + $DANA_SCORE)&gt;&gt;&lt;&lt;goto Turn&gt;&gt;</tw-passagedata><tw-passagedata pid="19" name="How it works" tags="" position="17,386" size="100,100">&#39;&#39;Adaptive Futures&#39;&#39; is a &#39;serious game&#39; designed to introduce players to community-level decision-making and climate change adaptation. The research used to produce the game was conducted jointly through [[NIWA Taihoro Nukurangi|http://www.niwa.co.nz]] and [[Manaaki Whenua Landcare Research|http://www.landcareresearch.co.nz]], and funded by the [[Natural Hazards Research Platform|http://www.naturalhazards.org.nz]]. The game is programmed using the [[Twine|http://twinery.org]] platform, which combines visual and in-built coding elements with CSS and Javascript to write non-linear &#39;stories&#39;. The project is published to HTML and hosted on a remote server.
+&lt;&lt;set $TURN += 1&gt;&gt;&lt;&lt;set $STORMPROB += 3&gt;&gt;&lt;&lt;set $SCORE = ($KIM_SCORE + $FERN_SCORE + $WEHI_SCORE + $TAYLOR_SCORE + $RILEY_SCORE + $DANA_SCORE)&gt;&gt;&lt;&lt;goto Turn&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="How it works" tags="" position="17,386" size="100,100">&#39;&#39;Adaptive Futures&#39;&#39; is a &#39;serious game&#39; designed to introduce players to community-level decision-making and climate change adaptation. The research used to produce the game was conducted jointly through [[NIWA Taihoro Nukurangi|http://www.niwa.co.nz]] and [[Manaaki Whenua Landcare Research|http://www.landcareresearch.co.nz]], and funded by the [[Natural Hazards Research Platform|http://www.naturalhazards.org.nz]]. The game is programmed using the [[Twine|http://twinery.org]] platform, which combines visual and in-built coding elements with CSS and Javascript to write non-linear &#39;stories&#39;. The project is published to HTML and hosted on a remote server.
 
 The objective of the game is to protect the Seaview community from the adverse effects of climate change. Doing this will require the player to take actions to adapt to these effects, and their ability to take action depends on support from the community. Maintaining that support means that the player will need to build trust with community members, who experience the effects of climate change differently depending on their own values and location within the coastal space. Therefore, the game requires the player to balance the wishes of the community with the need to mitigate the immediate and long-term effects of climate change.
 
@@ -1400,7 +1395,7 @@ The game is populated by non-player characters (NPCs), each with a location, bac
 
 &lt;img src=http://b-davies.github.io/games_images/attitutde_matrix.png width=300 height=300&gt;
 
-[[Back to Intro|Intro]]</tw-passagedata><tw-passagedata pid="20" name="UpdateOutcomes" tags="" position="643,336" size="100,100">/*CHECK ZONES*/
+[[Back to Intro|Intro]]</tw-passagedata><tw-passagedata pid="19" name="UpdateOutcomes" tags="" position="643,336" size="100,100">/*CHECK ZONES*/
 &lt;&lt;if $SEALEVEL &lt; 0.1&gt;&gt;
 	&lt;&lt;set $ZONE1CONDITION = 1&gt;&gt;
 	&lt;&lt;if $SEVEREWEATHER &gt; 2 and $SEALEVEL &lt; 5&gt;&gt;
@@ -1494,7 +1489,7 @@ The game is populated by non-player characters (NPCs), each with a location, bac
 
 
 
-&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="UpdateAdaptations" tags="" position="651,501" size="100,100">/*CHECK THIS: IF SHORT SEAWALL IS ALREADY INSTALLED, HIGH SEAWALL LESS EXPENSIVE??*/
+&lt;&lt;goto UpdateAdaptations&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="UpdateAdaptations" tags="" position="651,501" size="100,100">/*CHECK THIS: IF SHORT SEAWALL IS ALREADY INSTALLED, HIGH SEAWALL LESS EXPENSIVE??*/
 
 /*CHECK FINANCES*/
 &lt;&lt;set $TURNOUTCOME.push($BUDGET)&gt;&gt;
@@ -1611,17 +1606,17 @@ The game is populated by non-player characters (NPCs), each with a location, bac
 	&lt;&lt;set $MAP = 9&gt;&gt;
 &lt;&lt;endif&gt;&gt;
 
-&lt;&lt;goto UpdateNPCStatus&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="TO DO" tags="" position="21,500" size="100,100">--FIX NPC PLACE-BASED RESPONSES
+&lt;&lt;goto UpdateNPCStatus&gt;&gt;</tw-passagedata><tw-passagedata pid="21" name="TO DO" tags="" position="21,500" size="100,100">--FIX NPC PLACE-BASED RESPONSES
 --DEBUGGING WINDOW FOR NPCS
 --NEW TEXT FOR CHARACTERS
 --PAULA COMMENTS
-</tw-passagedata><tw-passagedata pid="23" name="Intro1" tags="" position="401,0" size="100,100">!Adaptive Futures
+</tw-passagedata><tw-passagedata pid="22" name="Intro1" tags="" position="401,0" size="100,100">!Adaptive Futures
 
 Welcome to Adaptive Futures! In this game, you are a member of a committee charged with making decisions about a coastal New Zealand town called &#39;&#39;Seaview&#39;&#39;. Flooding and erosion threaten the local waterfront, and climate change projections suggest this threat will continue to move inland for the foreseeable future. Your job is to honour and respect the values of the Seaview community while making changes to ensure the longevity and prosperity of the town.
 
 The committee represents the voice of the Seaview community at large and has the ability to make decisions on coastal management, development, and protection. Decisions are made on a ten-year basis.  You will be put in charge of a budget and a range of possible coastal management options will be presented for consideration.  
 
-[[Click here to continue|Intro2]]</tw-passagedata><tw-passagedata pid="24" name="Wehi" tags="" position="1396,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Wehi the Resource Management Officer&lt;/span&gt;
+[[Click here to continue|Intro2]]</tw-passagedata><tw-passagedata pid="23" name="Wehi" tags="" position="1396,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Wehi the Resource Management Officer&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/wehi.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Wehi&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutwehi&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutwehi&quot; class=&quot;hidden&quot;&gt;Wehi is tangata whenua for the rohe surrounding Seaview. He works for his iwi as a resource management officer and is actively involved in resource consenting and other issues that require tangata whenua input and guidance. Wehi and his young family live in a townhouse set a little way back from the beach. They collect kai moana from the rocky area at the western end of the beach in season and spend a large portion of their time playing in or on the moana year-round. Wehi’s home is not immediately impacted by sea level rise, but where possible he encourages his iwi, hapū and whanau to plan for climate change impacts and implications, especially for Māori-owned assets such as coastal land and fisheries quota.&lt;/div&gt;
 
@@ -1645,7 +1640,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.WEHI to $WEHIWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Consult with the public" tags="" position="1126,214" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
+&lt;&lt;set $CONSULT.WEHI to $WEHIWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Consult with the public" tags="" position="1126,214" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/consult.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Hold public meetings/hui with iwi and stakeholders.|
 |&amp;emsp;| | |
@@ -1659,7 +1654,7 @@ Deliver score-based content
 |&amp;emsp;| | |
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
-Image credit: By The U.S. Food and Drug Administration - Youth and Tobacco Town Hall Meeting_6606, Public Domain, https://commons.wikimedia.org/w/index.php?curid=51271511</tw-passagedata><tw-passagedata pid="26" name="Taylor" tags="" position="1400,344" size="100,100">&lt;span class=&quot;h1&quot;&gt;Taylor the Tourist&lt;/span&gt;
+Image credit: By The U.S. Food and Drug Administration - Youth and Tobacco Town Hall Meeting_6606, Public Domain, https://commons.wikimedia.org/w/index.php?curid=51271511</tw-passagedata><tw-passagedata pid="25" name="Taylor" tags="" position="1400,344" size="100,100">&lt;span class=&quot;h1&quot;&gt;Taylor the Tourist&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/taylor.JPG  style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Taylor&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouttaylor&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouttaylor&quot; class=&quot;hidden&quot;&gt;Taylor represents the average visitor to Seaview. She visits the village with her partner and two children to play on the beach and go surfing. An attractive beach for the children and a safe coastline for swimming and surfing are essential for a visit. 
 
@@ -1690,17 +1685,18 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.TAYLOR to $TAYLORWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Consultation" tags="" position="804,503" size="100,100">You hold a public forum at the local Workingman&#39;s Club to discuss ideas about climate change adaptation.
+&lt;&lt;set $CONSULT.TAYLOR to $TAYLORWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="26" name="Consultation" tags="" position="804,502" size="100,100">&lt;&lt;if $YEAR &lt; 2049&gt;&gt;&lt;&lt;set $N = 2&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $N = 1&gt;&gt;&lt;&lt;endif&gt;&gt;You hold a public forum at the local Workingman&#39;s Club to discuss ideas about climate change adaptation.
 
 In attendance:
-&lt;&lt;if random(1,4) &gt; 2&gt;&gt;Kim the Fish and Chips Shop Owner&lt;&lt;set $KIM_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Kim the Fish and Chips Shop Owner&lt;/span&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if random(1,4) &gt; 2&gt;&gt;Fern the Activist&lt;&lt;set $FERN_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Fern the Activist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if random(1,4) &gt; 2&gt;&gt;Wehi the Resource Management Officer&lt;&lt;set $WEHI_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Wehi the Resource Management Officer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if (random(1,4) &gt; 2) and ($TAYLOR_LVL &lt; 2)&gt;&gt;Taylor the Tourist&lt;&lt;set $TAYLOR_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Taylor the Tourist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if random(1,4) &gt; 2&gt;&gt;Riley the Ratepayer&lt;&lt;set $RILEY_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Riley the Ratepayer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if random(1,4) &gt; 2&gt;&gt;Dana the Developer&lt;&lt;set $DANA_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Dana the Developer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if random(1,4) &gt; $N&gt;&gt;Kim the Fish and Chips Shop Owner&lt;&lt;set $KIM_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Kim the Fish and Chips Shop Owner&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if random(1,4) &gt; $N&gt;&gt;Fern the Activist&lt;&lt;set $FERN_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Fern the Activist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if random(1,4) &gt; $N&gt;&gt;Wehi the Resource Management Officer&lt;&lt;set $WEHI_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Wehi the Resource Management Officer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if (random(1,4) &gt; $N) and ($TAYLOR_LVL &lt; 2)&gt;&gt;Taylor the Tourist&lt;&lt;set $TAYLOR_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Taylor the Tourist&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if random(1,4) &gt; $N&gt;&gt;Riley the Ratepayer&lt;&lt;set $RILEY_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Riley the Ratepayer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if random(1,4) &gt; $N&gt;&gt;Dana the Developer&lt;&lt;set $DANA_CONSULT to true&gt;&gt;&lt;&lt;else&gt;&gt;&lt;span class=&quot;inactiveText&quot;&gt;Dana the Developer&lt;/span&gt;&lt;&lt;endif&gt;&gt;
 
-[[Click here to see continue|CheckConditions]]</tw-passagedata><tw-passagedata pid="28" name="Reset" tags="" position="954,501" size="100,100">&lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
+[[Click here to see continue|CheckConditions]]
+</tw-passagedata><tw-passagedata pid="27" name="Reset" tags="" position="954,501" size="100,100">&lt;&lt;set $BUDGETTEMP = 0&gt;&gt;
 &lt;&lt;set $SEAWALLTEMP1 to false&gt;&gt;
 &lt;&lt;set $SEAWALLTEMP2 to false&gt;&gt; 
 &lt;&lt;set $BEACHNOURISHTEMP to false&gt;&gt;
@@ -1709,7 +1705,7 @@ In attendance:
 &lt;&lt;set $PUBLICCONSULTTEMP to false&gt;&gt;
 &lt;&lt;set $ACTIONLIST to []&gt;&gt;
 &lt;&lt;goto Decisions&gt;&gt;
-</tw-passagedata><tw-passagedata pid="29" name="Credits" tags="" position="21,258" size="100,100">This project was funded by:
+</tw-passagedata><tw-passagedata pid="28" name="Credits" tags="" position="21,258" size="100,100">This project was funded by:
 
 &lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/NatHaz%20logo.png&gt;&lt;/a&gt;
 
@@ -1724,7 +1720,7 @@ Game programmed using [[Twine|http://twinery.org]].
 Character avatars generated by [[This Person Does Not Exist|https://thispersondoesnotexist.com/]]
 
 [[Return to Start|Intro]]
-</tw-passagedata><tw-passagedata pid="30" name="Intro2" tags="" position="600,0" size="100,100">!Playing the game
+</tw-passagedata><tw-passagedata pid="29" name="Intro2" tags="" position="600,0" size="100,100">!Playing the game
 
 The objective of the game is to protect the Seaview community from the adverse effects of climate change while honouring the wishes of the community. Your ability to continue making decisions depends on support from the community, as well as funds to address their concerns.
 
@@ -1736,7 +1732,7 @@ The panel at left keeps track of your progress through the game:
 
 [[Click here to start playing|Turn]]
 
-&lt;&lt;set $SCORE = ($KIM_SCORE + $FERN_SCORE + $WEHI_SCORE + $TAYLOR_SCORE + $RILEY_SCORE + $DANA_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Dana" tags="" position="1398,599" size="100,100">&lt;span class=&quot;h1&quot;&gt;Dana the Developer&lt;/span&gt;
+&lt;&lt;set $SCORE = ($KIM_SCORE + $FERN_SCORE + $WEHI_SCORE + $TAYLOR_SCORE + $RILEY_SCORE + $DANA_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Dana" tags="" position="1398,599" size="100,100">&lt;span class=&quot;h1&quot;&gt;Dana the Developer&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/dana.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Dana&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutdana&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutdana&quot; class=&quot;hidden&quot;&gt;Dana runs a coastal property development firm. He got into the business about ten years ago when he sold his family farm in Awhitu into several smaller parcels and discovered that he found the process very satisfying. He recently purchased a vacant lot situated behind Seaview’s main street but near enough to easily walk to the beach. Dana is getting ready to develop this property into high-end condos. He thinks Seaview is the perfect coastal community and is interested in buying more land for development in the area. Dana is a climate skeptic who does not consider climate change to be a lasting threat to his business. His motto is “If I build it, they will come”. &lt;/div&gt;
 
@@ -1761,7 +1757,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.DANA to $DANAWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Riley" tags="" position="1400,467" size="100,100">&lt;span class=&quot;h1&quot;&gt;Riley the Ratepayer&lt;/span&gt;
+&lt;&lt;set $CONSULT.DANA to $DANAWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Riley" tags="" position="1400,467" size="100,100">&lt;span class=&quot;h1&quot;&gt;Riley the Ratepayer&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/riley.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Riley&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutriley&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutriley&quot; class=&quot;hidden&quot;&gt;Riley is a retired dairy farmer who owns a large beachfront duplex. He lives in one half and rents out the other for much of the year. When it is not rented his children and grandchildren come to visit and stay in the duplex. Riley and his dog, Max, enjoy walking on the beach, fishing off the rocks, and visiting with neighbours at the local shops. He is Chair of his local Ratepayers &amp; Residents Association, where he regularly gets involved in local issues. He also volunteers his time as a Justice of the Peace at the local library. Riley takes at least one trip overseas every year, a luxury that the rented duplex makes possible. He is happy with his quiet lifestyle and expects to spend his final days living by the sea. &lt;/div&gt;
 
@@ -1785,7 +1781,7 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.RILEY to $RILEYWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="33" name="Settings" tags="" position="202,203" size="100,100">&lt;&lt;link &quot;Financial settings&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;About the Financials of Adaptation&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
+&lt;&lt;set $CONSULT.RILEY to $RILEYWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Settings" tags="" position="202,203" size="100,100">&lt;&lt;link &quot;Financial settings&quot;&gt;&gt;&lt;&lt;script&gt;&gt;UI.close()&lt;&lt;/script&gt;&gt;&lt;&lt;autopopup &quot;About the Financials of Adaptation&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 |Item|Value|
 |Starting Budget|$&lt;&lt;textbox &quot;$BUDGET&quot; 100&gt;&gt;k|
@@ -1805,24 +1801,24 @@ Deliver score-based content
 &lt;label&gt;&lt;&lt;radiobutton &quot;$NZRCP&quot; &quot;4&quot;&gt;&gt;RCP8.5 &lt;/label&gt;
 
 [[OK|Intro]]
-</tw-passagedata><tw-passagedata pid="34" name="NoBizMove" tags="" position="958,646" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
+</tw-passagedata><tw-passagedata pid="33" name="NoBizMove" tags="" position="958,646" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
 
 &lt;&lt;if $KIM_CONSULT == false&gt;&gt;Kim the Fish and Chips Shop Owner&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $DANA_CONSULT == false&gt;&gt;Dana the Developer&lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="35" name="NoResMove" tags="" position="1138,647" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="34" name="NoResMove" tags="" position="1138,647" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
 
 &lt;&lt;if $FERN_CONSULT == false&gt;&gt;Fern the Activist&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $WEHI_CONSULT == false&gt;&gt;Wehi the Resource Manager&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $RILEY_CONSULT == false&gt;&gt;Riley the Ratepayer&lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="36" name="VotedOut" tags="" position="402,201" size="100,100">The residents of Seaview are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|Summary]]
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="35" name="VotedOut" tags="" position="402,201" size="100,100">The residents of Seaview are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|End]]
 
 &lt;div style=&quot;position:relative;width:267px;height:25px;overflow=hidden;&quot;&gt;
 	&lt;div style=&quot;position:absolute;top:-267px;left:-5px&quot;&gt;
 		&lt;iframe width=&quot;100&quot; height=&quot;100&quot; src=&quot;https://www.youtube.com/embed/yJxCdh1Ps48?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="About Climate Change Scenarios" tags="" position="196,495" size="100,100">Climate projections are scientific statements, based on the output of global or regional climate models, about changes in aspects of the future climate. These projections are dependent on a set of influential conditions, such as changes in atmospheric greenhouse gases (GHGs). These are known as climate forcings.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="36" name="About Climate Change Scenarios" tags="" position="196,495" size="100,100">Climate projections are scientific statements, based on the output of global or regional climate models, about changes in aspects of the future climate. These projections are dependent on a set of influential conditions, such as changes in atmospheric greenhouse gases (GHGs). These are known as climate forcings.
  
 It is not possible to predict the future climate, because of the uncertainty around forcings (such as future emissions). Climate models instead provide model-derived descriptions of possible future climates under a given set of scenarios of climate forcings. The climate change models used in this game are based on [[IPCC Representative Concentration Pathways (RCPs)|http://www.mfe.govt.nz/publications/climate-change/coastal-hazards-and-climate-change-guidance-local-government]]. 
 
@@ -1836,7 +1832,7 @@ RCP 6.0 is a high-mid range emissions scenario (in terms of future carbon emissi
 RCP 8.5 is a scenario with very high greenhouse gas emissions.
  
 Current research suggests the two most likely pathways are RCP4.5 – in which emissions peak and then decline, with carbon dioxide concentration stabilising at about 540 ppm by the end of the twenty-first century, and RCP8.5 which represents a high-emission scenario, for which carbon dioxide concentration reaches about 940 ppm by the end of the twenty-first century. 
-</tw-passagedata><tw-passagedata pid="38" name="About the Financials of Adaptation" tags="" position="350,499" size="100,100">The community financial profile for Seaview is taken from the 2013 national census of New Zealand. The 2013 census reiterated previous census which found at the &#39;average&#39; household in New Zealand had 3 people and that - nationally - there are slightly more women than men in the country. The national proportions in the census were used to determine the village population (186 people in the village, of whom 94 are female and 92 are men).
+</tw-passagedata><tw-passagedata pid="37" name="About the Financials of Adaptation" tags="" position="350,499" size="100,100">The community financial profile for Seaview is taken from the 2013 national census of New Zealand. The 2013 census reiterated previous census which found at the &#39;average&#39; household in New Zealand had 3 people and that - nationally - there are slightly more women than men in the country. The national proportions in the census were used to determine the village population (186 people in the village, of whom 94 are female and 92 are men).
 
 Families are broken into lower income (earning on average only NZD$25k per year), middle income (earning on average NZD$75k per year) and higher income (earning on average NZD$150k per year). For simplicity, each household is assumed owns their own house. 
 
