@@ -438,7 +438,7 @@ to proceed with adaptation, &quot;COST&quot; parameters set the finanicial expen
 &lt;&lt;set $KIM_LVL = 1&gt;&gt;
 &lt;&lt;set $KIM_CONT = $INCOME&gt;&gt;
 &lt;&lt;set $KIM_LVL1 = [&quot;You don&#39;t seem to be doing anything to protect my shop from these storms we keep getting! My business is vital to this community! We need some beach renourishment NOW!&quot;,&quot;My business is vital to this community. I don&#39;t think there is any reason to increase our rates just to build an ugly wall. I think things are fine as they are.&quot;,&quot;My business is vital to this community. I want to make sure that it is protected from weather bombs and floods. We need some more sand here to make sure that we don’t all get washed away.&quot;,&quot;I want to be sure to protect my business, not just today or this year, but also in the future. I am concerned about sea level rise and the impact that it will have on my business and infrastructure. There are conversations that we need to be having now to prepare for this.&quot;]&gt;&gt;
-&lt;&lt;set $KIM_LVL2 = [&quot;These storms are getting worse! The last one came right into my shop! A seawall is really the only option that will protect my business!&quot;,&quot;I don’t see what the big deal is with sea level rise. I certainly don’t think I should have to pay any more in rates just so I can be pushed around by the Council!&quot;,&quot;I am really getting worried about these floods and storms. I think that seawalls are the fastest way to protect the town, but there may be other options. If the Council doesn’t get more proactive, I will have to get more vocal about my concerns.&quot;,&quot;The last event really took a toll on my business.  I think relocation may be the best option.&quot;]&gt;&gt;
+&lt;&lt;set $KIM_LVL2 = [&quot;These storms are getting worse! The last one came right into my shop! A seawall is really the only option that will protect my business!&quot;,&quot;I don’t see what the big deal is with sea level rise. I certainly don’t think I should have to pay any more in rates just so I can be pushed around by the Council!&quot;,&quot;I am really getting worried about these floods and storms. I think that seawalls are the fastest way to protect the town, but there may be other options. If the Council doesn’t get more proactive, I will have to get more vocal about my concerns.&quot;,&quot;The last event really took a toll on my business.  I think we need to get together as a town and consider our options.&quot;]&gt;&gt;
 &lt;&lt;set $KIM_LVL3 = [&quot;I wish that we had relocated years ago! Why can’t you people just take charge and be proactive!&quot;,&quot;Climate change has  been tough on the business.I wish that there was more that someone could do to prevent these things from happening, but none of the choices are great. I guess relocation is probably the safest option at this point.&quot;,&quot;Climate change has been tough on the business. I think relocation is the only option now.&quot;,&quot;TThe future of my business depends on my ability to adapt. And the future of this community depends on our ability to work together to ensure a smooth relocation process.&quot;]&gt;&gt;
 &lt;&lt;set $KIM_LVL4 = [&quot;I can&#39;t say I&#39;m happy about this move! Did you even try to save my business?&quot;,&quot;This spot is not nearly as lucrative as my spot on the beach!&quot;,&quot;I guess this was inevitable, just glad I got out when I did.&quot;,&quot;I know this isn&#39;t a perfect solution, but I am glad there was a plan in place.&quot;]&gt;&gt;
 &lt;&lt;set $KIM_TRUST_HISTORY = []&gt;&gt;
@@ -875,7 +875,7 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 		&lt;&lt;endif&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 	&lt;&lt;if ($KIM_SCORE == 3)&gt;&gt;
-		&lt;&lt;set $KIMWANTS to &quot;D&quot;&gt;&gt;
+		&lt;&lt;set $KIMWANTS to &quot;F&quot;&gt;&gt;
 		&lt;&lt;set $KIMDISLIKES to &quot;A&quot;&gt;&gt;
 	&lt;&lt;endif&gt;&gt;
 &lt;&lt;endif&gt;&gt;
@@ -1089,15 +1089,19 @@ Fern will have certain preferences regarding response to SLR and adaptation opti
 /*------------------------------------------------------*/
 /*------------------------------------------------------*/
 /*Determine TAYLOR&#39;s response set*/
-&lt;&lt;if ($ZONE1CONDITION &gt; 0)&gt;&gt;
-	&lt;&lt;if ($ZONE1CONDITION &gt; 1)&gt;&gt;
-		&lt;&lt;set $TAYLOR_LVL = 3&gt;&gt;
-	&lt;&lt;else&gt;&gt;
-		&lt;&lt;set $TAYLOR_LVL = 2&gt;&gt;
-	&lt;&lt;endif&gt;&gt;
-&lt;&lt;else&gt;&gt;
+
+&lt;&lt;if $ZONE1CONDITION == 0&gt;&gt;
 	&lt;&lt;set $TAYLOR_LVL = 1&gt;&gt;
+&lt;&lt;elseif $ZONE1CONDITION == 1&gt;&gt;
+	&lt;&lt;set $TAYLOR_LVL = 2&gt;&gt;
+&lt;&lt;elseif $ZONE1CONDITION == 2&gt;&gt;
+	&lt;&lt;set $TAYLOR_LVL = 3&gt;&gt;
+&lt;&lt;elseif $ZONE1CONDITION == 3&gt;&gt;
+	&lt;&lt;set $TAYLOR_LVL = 1&gt;&gt;
+&lt;&lt;elseif $ZONE1CONDITION &gt;= 4&gt;&gt;
+	&lt;&lt;set $TAYLOR_LVL = 3&gt;&gt;
 &lt;&lt;endif&gt;&gt;
+
 
 &lt;&lt;if $RETREAT2 == true&gt;&gt;&lt;&lt;set $TAYLOR_LVL to 4&gt;&gt;&lt;&lt;endif&gt;&gt;
 
@@ -1674,7 +1678,7 @@ Deliver score-based content
 |&amp;emsp;| | |
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
-Image credit: Ginny Larsen/Ministry for Culture and Heritage &quot;[[Community meeting at St Albans Baptist Church|http://www.quakestories.govt.nz/photos/678/]]&quot; 07 Jun 2014</tw-passagedata><tw-passagedata pid="25" name="Taylor" tags="" position="1402,344" size="100,100">&lt;span class=&quot;h1&quot;&gt;Taylor the Tourist&lt;/span&gt;
+Image credit: Ginny Larsen/Ministry for Culture and Heritage &quot;[[Community meeting at St Albans Baptist Church|http://www.quakestories.govt.nz/photos/678/]]&quot; 07 Jun 2014</tw-passagedata><tw-passagedata pid="25" name="Taylor" tags="" position="1398,335" size="100,100">&lt;span class=&quot;h1&quot;&gt;Taylor the Tourist&lt;/span&gt;
 &lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/taylor.JPG  style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Taylor&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouttaylor&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouttaylor&quot; class=&quot;hidden&quot;&gt;Taylor visits Seaview village with her partner and two children to play on the beach and go surfing. The family usually stays for about five days at the motel, where they have easy beach access. They buy food from the local supermarket, bakery and restaurants, and souvenirs and gifts at the local boutiques and surf shops. The children are particularly fond of the ‘Fush n Chups’ shop. If some of the shops are closed, this will inconvenience the family, but will not prevent them from visiting. However, if the beach is not safe or accessible, Taylor will go elsewhere with her family for holidays.&lt;/div&gt;
 
@@ -1683,8 +1687,9 @@ Taylor says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $TAYLOR_LVL =
 Taylor&#39;s contribution to decadal budget is $$$TAYLOR_CONT k
 
 [[Back to status page|Turn]]
+$ZONE1CONDITION z1
+$TAYLOR_LVL tl
 
-$TAYLOR_LVL
 
 /*TAYLOR&#39;S LEVEL: &lt;&lt;if $TAYLOR_LVL == 1&gt;&gt;NOT THREATENED&lt;&lt;elseif $TAYLOR_LVL == 2&gt;&gt;THREATENED&lt;&lt;elseif $TAYLOR_LVL == 3&gt;&gt;GONE&lt;&lt;else&gt;&gt;GONE&lt;&lt;endif&gt;&gt;
 TAYLOR&#39;S STATUS: &lt;&lt;if $TAYLOR_SCORE == 0&gt;&gt;OUTRAGED&lt;&lt;elseif $TAYLOR_LVL == 1&gt;&gt;APATHETIC&lt;&lt;elseif $TAYLOR_SCORE == 2&gt;&gt;REACTIVE&lt;&lt;else&gt;&gt;ADAPTIVE&lt;&lt;endif&gt;&gt;*/
