@@ -231,13 +231,13 @@ Macro.add('autopopup', {
 	}
 });
 
-</script><tw-tag name="Bug" color="green"></tw-tag>,<tw-tag name="Need-Image" color="red"></tw-tag>,<tw-tag name="Need-image" color="red"></tw-tag>,<tw-tag name="Need-images" color="red"></tw-tag><tw-passagedata pid="1" name="Intro" tags="Minor-Update" position="227,2" size="100,100">[img[https://b-davies.github.io/games_images/landing_image.png][Intro1]]
+</script><tw-tag name="Bug" color="green"></tw-tag>,<tw-tag name="Need-Image" color="red"></tw-tag>,<tw-tag name="Need-image" color="red"></tw-tag>,<tw-tag name="Need-images" color="red"></tw-tag><tw-passagedata pid="1" name="Intro" tags="Minor-Update" position="227,2" size="100,100">[img[https://adaptivefutures.github.io/seriousgames/images/landing_image.png][Intro1]]
 [[About the game|How it works]]  |  [[Credits|Credits]] |  [[Settings|Settings]] 
 
 &lt;&lt;if $NZRCP == 1&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP1[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 2&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP2[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $NZRCP == 3&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP3[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Turn" tags="Major-Update two-panel" position="800,3" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
+&lt;&lt;if $NZRCP == 4&gt;&gt;&lt;&lt;set $SEALEVEL = $NZRCP4[$TURN - 1]&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Turn" tags="Major-Update two-panel" position="800,2" size="100,100">&lt;div id=&quot;wrapper&quot;&gt;
   &lt;div id=&quot;left&quot;&gt;&lt;span class=&quot;h1&quot;&gt;Seaview $YEAR&lt;/span&gt;
 &lt;&lt;if $MAP == 0&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_1.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 1&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_2.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 2&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_3.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 3&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 4&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 5&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 6&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 7&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_4.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 8&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_a.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 9&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_relocate_b.jpg width=400 height=400&gt;&lt;&lt;elseif $MAP == 10&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_small.jpg width=450 height=300&gt;&lt;&lt;elseif $MAP == 11&gt;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/seaview_maps/seaview_seawall_large.jpg width=450 height=300&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;if $TURN &gt; 1&gt;&gt;
 In the last 10 years you experienced $SEVEREWEATHER years of severe weather.&lt;&lt;endif&gt;&gt;  
@@ -252,9 +252,9 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 
 &lt;/div&gt;
 &lt;div id=&quot;right&quot;&gt;&lt;&lt;if $SCORE &lt;= 4&gt;&gt;&lt;&lt;goto VotedOut&gt;&gt;&lt;&lt;elseif ($TURN &lt; $STOPTURN) and (($RETREAT1 == false) or ($RETREAT2 == false))&gt;&gt;Community Stakeholders
-&lt;&lt;if $KIM_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Kim_thumbnail.jpg][Kim]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Kim_thumbnail_red.jpg][Kim]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $FERN_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Fern_thumbnail.jpg][Fern]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Fern_thumbnail_red.jpg][Fern]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $WEHI_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Wehi_thumbnail.jpg][Wehi]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Wehi_thumbnail_red.jpg][Wehi]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $TAYLOR_LVL &gt;= 2&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/taylor_thumbnail_grey.jpg][Taylor]]&lt;&lt;elseif $TAYLOR_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Taylor_thumbnail.jpg][Taylor]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Taylor_thumbnail_red.jpg][Taylor]]&lt;&lt;endif&gt;&gt;
-&lt;&lt;if $RILEY_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Riley_thumbnail.jpg][Riley]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Riley_thumbnail_red.jpg][Riley]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $DANA_SCORE &gt; 0&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Dana_thumbnail.jpg][Dana]]&lt;&lt;else&gt;&gt;[img[https://b-davies.github.io/games_images/avatars/Dana_thumbnail_red.jpg][Dana]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $KIM_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/kim_thumbnail.jpg][Kim]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/kim_thumbnail_red.jpg][Kim]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $FERN_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/fern_thumbnail.jpg][Fern]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/fern_thumbnail_red.jpg][Fern]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $WEHI_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail.jpg][Wehi]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/wehi_thumbnail_red.jpg][Wehi]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $TAYLOR_LVL &gt;= 2&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_grey.jpg][Taylor]]&lt;&lt;elseif $TAYLOR_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail.jpg][Taylor]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/taylor_thumbnail_red.jpg][Taylor]]&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $RILEY_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail.jpg][Riley]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/riley_thumbnail_red.jpg][Riley]]&lt;&lt;endif&gt;&gt; &lt;&lt;if $DANA_SCORE &gt; 0&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail.jpg][Dana]]&lt;&lt;else&gt;&gt;[img[https://adaptivefutures.github.io/seriousgames/images/avatars/dana_thumbnail_red.jpg][Dana]]&lt;&lt;endif&gt;&gt;
 
 [[Make some decisions|Decisions]]&lt;&lt;if $TURN &gt; 1&gt;&gt;&lt;&lt;set $BUDGET += ($KIM_CONT + $FERN_CONT + $WEHI_CONT + $TAYLOR_CONT + $RILEY_CONT + $DANA_CONT)&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;else&gt;&gt;[[You&#39;ve reached the end of the game.|Summary]]&lt;&lt;endif&gt;&gt;
 &lt;/div&gt;
@@ -280,13 +280,14 @@ $ZONE7CONTENT[$ZONE7CONDITION]
 
 This project was funded by:
 
-&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/NatHaz%20logo.png&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=http://adaptivefutures.github.io/seriousgames/images/NatHaz%20logo.png&gt;&lt;/a&gt;
 
 Collaborating institutions:
 
-&lt;a href=&quot;http://www.niwa.co.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/NIWA_LOGO_2.png width=300 height=110&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.niwa.co.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/NIWA_LOGO_2.png width=300 height=110&gt;&lt;/a&gt;
  
-&lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/landcare%20logo.PNG&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https:/adaptivefutures.github.io/seriousgames/images/landcare%20logo.PNG&gt;&lt;/a&gt;
+
 </tw-passagedata><tw-passagedata pid="5" name="StoryCaption" tags="" position="22,5" size="100,100">| !Year:|&amp;nbsp;|$YEAR |
 | !Sea level:|&amp;nbsp;|+$SEALEVEL m|
 | !Budget:|&amp;nbsp;|$$$BUDGET k|
@@ -560,7 +561,7 @@ Or you can
 &lt;&lt;if ($SEAWALLTEMP1 == false) and ($SEAWALLTEMP2 == false) and ($BEACHNOURISHTEMP == false) and ($RETREATTEMP1 == false) and ($RETREATTEMP2 == false)&gt;&gt; and ($PUBLICCONSULTTEMP == false) &lt;&lt;set $ACTIONLIST.push(&quot;A&quot;)&gt;&gt;&lt;&lt;endif&gt;&gt;
 
 &lt;&lt;if $BUDGETTEMP &gt; $BUDGET&gt;&gt;Your budget is currently $BUDGET, but your expenditures for this round are $ $BUDGETTEMP. Please revise your [[decisions|Reset]] to stay within budget.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == true or $SEAWALLTEMP2 == true or $BEACHNOURISHTEMP == true or $RETREATTEMP1 == true or $RETREATTEMP2 == true)&gt;&gt;You cannot engage in public consultation and construct adaptation measures in the same turn. Please revise your [[decisions|Reset]] to choose either consultation or adaptations.&lt;&lt;set $ACTIONLIST to []&gt;&gt;&lt;&lt;elseif ($PUBLICCONSULTTEMP == true) and ($SEAWALLTEMP1 == false or $SEAWALLTEMP2 == false or $BEACHNOURISHTEMP == false or $RETREATTEMP1 == false or $RETREATTEMP2 == false)&gt;&gt;&lt;&lt;goto Consultation&gt;&gt;&lt;&lt;elseif $RETREATTEMP1 == true and ($KIM_CONSULT == false or $DANA_CONSULT == false)&gt;&gt;&lt;&lt;goto NoBizMove&gt;&gt;&lt;&lt;elseif $RETREATTEMP2 == true and ($WEHI_CONSULT == false or $RILEY_CONSULT == false or $FERN_CONSULT == false)&gt;&gt;&lt;&lt;goto NoResMove&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;goto CheckConditions&gt;&gt;&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="11" name="Install short seawall" tags="" position="999,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall (rock revetment)|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|This sea wall designed to protect again erosion and storms to x.  it will run the length of the beach and look like a sloped surface covered with large rocks.|
@@ -598,7 +599,7 @@ Or you can
 %/
 
 </tw-passagedata><tw-passagedata pid="12" name="Install high seawall" tags="Major-update" position="1124,96" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Seawall Installation&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/seawall1.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Sea wall (rock revetment)|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|This sea wall designed to protect again erosion and storms to x.  it will run the length of the beach and look like a sloped surface covered with large rocks.|
@@ -632,7 +633,7 @@ Or you can
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
 </tw-passagedata><tw-passagedata pid="13" name="Relocate shorefront commercial area" tags="Major-Update" position="1002,330" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the shorefront commercial area&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/Islington.JPG style=&quot;width:450px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/Islington.JPG style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of shorefront businesses|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|The relocation involves purchasing land from one of the local farmers has indicated a willingness to sell a block on land on the hill behind the existing settlement; Re-routing to road behind the existing settlement to provide access for residents and service the new town centre; Relocating the shops along the road overlooking the beach and creating a new town centre. This includes the bank, the fish and chip shop, the gift shop, the ice cream parlour, the supermarket and the surf shop, café/restaurant and the bakery, and 12 townhouses along the road frontage overlooking the beach. New planning laws which exclude building of any permanent structure in the vacated areas.; Some financial compensation for people to move and assistance to rebuild.|
@@ -677,8 +678,8 @@ Photo: [[Islington Fish &amp; Chips|http://ketechristchurch.peoplesnetworknz.inf
 //
 //Need some warning signs of failure – say during the last storm locals //noted the water level was getting very close to the top of the sea //wall.
 %/
-</tw-passagedata><tw-passagedata pid="14" name="Relocate coastal residential area" tags="Major-update" position="1122,328" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/Moving_house.jpg style=&quot;width:450px;height:300px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="14" name="Relocate coastal residential area" tags="Major-update" position="1122,331" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about relocating the coastal residents&lt;/span&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/Moving_house.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Relocation of coastal residents|
 |&amp;emsp;| | |
@@ -701,7 +702,7 @@ Once this relocation stage is complete the community is no longer at risk from t
 Image by Wouter Hagens - Own work, Public Domain, https://commons.wikimedia.org/w/index.php?curid=1820344
 
 </tw-passagedata><tw-passagedata pid="15" name="Beach renourishment" tags="" position="1004,212" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about Beach Nourishment&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/beach-nourishment2.jpg&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/beach-nourishment2.jpg&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Beach re-nourishment is simply adding sand to the beach to replace that which was lost through erosion.|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|Required volume of sand is 30,000 cubic metres of sand.|
@@ -730,7 +731,7 @@ Complains about sand blowing through town during storms
 
 Round prior to failure sand dune are showing signs of failure and the beach is higher than the park  storms stating to overtop the beach and damage the park
 */</tw-passagedata><tw-passagedata pid="16" name="Kim" tags="" position="1396,0" size="100,100">&lt;span class=&quot;h1&quot;&gt;Kim the Fish &amp; Chips Shop Owner&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Kim.JPG style=&quot;width:300px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/kim.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Kim&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutkim&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutkim&quot; class=&quot;hidden&quot;&gt;Kim is a small business owner. She and her husband run a restaurant called ‘Fush n Chups’ located on the main road facing the beach and park. The shop backs onto a courtyard that has seating available for customers. This area is prone to fill up with water during flood events. Kim is primarily focused on the stability of her business (financial capital), although the human, natural and social capitals are peripherally important due to their influence on the stability of the business. &lt;/div&gt;
 
 Kim says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $KIM_LVL == 1&gt;&gt;$KIM_LVL1[$KIM_SCORE]&lt;&lt;elseif $KIM_LVL == 2&gt;&gt;$KIM_LVL2[$KIM_SCORE]&lt;&lt;elseif $KIM_LVL == 3&gt;&gt;$KIM_LVL3[$KIM_SCORE]&lt;&lt;elseif $KIM_LVL == 4&gt;&gt;$KIM_LVL4[$KIM_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -753,8 +754,8 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.KIM to $KIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Fern" tags="" position="1391,112" size="100,100">&lt;span class=&quot;h1&quot;&gt;Fern the Activist&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Fern.jpg style=&quot;width:300px;height:300px;&quot;&gt;&lt;&lt;if $FERN_TRUST == 1&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST * $FERN_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST + $FERN_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $FERN_SCORE -= 1&gt;&gt;
+&lt;&lt;set $CONSULT.KIM to $KIMWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="17" name="Fern" tags="" position="1391,111" size="100,100">&lt;span class=&quot;h1&quot;&gt;Fern the Activist&lt;/span&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/fern.JPG style=&quot;width:300px;height:300px;&quot;&gt;&lt;&lt;if $FERN_TRUST == 1&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST * $FERN_SATISFACTION&gt;&gt;&lt;&lt;else&gt;&gt;&lt;&lt;set $FERN_SCORE = $FERN_TRUST + $FERN_SATISFACTION&gt;&gt;&lt;&lt;endif&gt;&gt;&lt;&lt;set $FERN_SCORE -= 1&gt;&gt;
 &lt;&lt;click &quot;Click here to learn more about Fern&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutfern&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutfern&quot; class=&quot;hidden&quot;&gt;Fern works part-time for a local community group, and is a lifetime member of [[Forest &amp; Bird|https://www.forestandbird.org.nz/]]. She has grown up in the area, appreciative of the small town feel, and proximity to the ocean. She has two small children, and her partner works in construction. They own a modest home on the edge of town. The property has a mortgage on it, and they hope to have paid it off prior to retirement. Fern values the aesthetics of the location, as well as the the biodiversity values (“I love to hear the sound of songbirds in the morning”) and she is familiar with the concept of ecosystem services, and believes that there needs to be a better costing of the environmental impacts of development. She is in favour of some sort of emissions trading scheme as a way to mitigate NZ’s emissions, is anxious about the future her children will inherit, and believes that adaptation is a central part of responding to climate change.&lt;/div&gt;
 
 Fern says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $FERN_LVL == 1&gt;&gt;$FERN_LVL1[$FERN_SCORE]&lt;&lt;elseif $FERN_LVL == 2&gt;&gt;$FERN_LVL2[$FERN_SCORE]&lt;&lt;elseif $FERN_LVL == 3&gt;&gt;$FERN_LVL3[$FERN_SCORE]&lt;&lt;elseif $FERN_LVL == 4&gt;&gt;$FERN_LVL4[$FERN_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1621,7 +1622,7 @@ Welcome to Adaptive Futures! In this game, you are a member of a committee charg
 The committee represents the voice of the Seaview community at large and has the ability to make decisions on coastal management, development, and protection. Decisions are made on a ten-year basis.  You will be put in charge of a budget and a range of possible coastal management options will be presented for consideration.  
 
 [[Click here to continue|Intro2]]</tw-passagedata><tw-passagedata pid="24" name="Wehi" tags="" position="1396,225" size="100,100">&lt;span class=&quot;h1&quot;&gt;Wehi the Resource Management Officer&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Wehi.JPG style=&quot;width:300px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/wehi.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Wehi&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutwehi&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutwehi&quot; class=&quot;hidden&quot;&gt;Wehi is tangata whenua for the rohe surrounding Seaview. He works for his iwi as a resource management officer and is actively involved in resource consenting and other issues that require tangata whenua input and guidance. Wehi and his young family live in a townhouse set a little way back from the beach. They collect kai moana from the rocky area at the western end of the beach in season and spend a large portion of their time playing in or on the moana year-round. Wehi’s home is not immediately impacted by sea level rise, but where possible he encourages his iwi, hapū and whanau to plan for climate change impacts and implications, especially for Māori-owned assets such as coastal land and fisheries quota.&lt;/div&gt;
 
 Wehi says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $WEHI_LVL == 1&gt;&gt;$WEHI_LVL1[$WEHI_SCORE]&lt;&lt;elseif $WEHI_LVL == 2&gt;&gt;$WEHI_LVL2[$WEHI_SCORE]&lt;&lt;elseif $WEHI_LVL == 3&gt;&gt;$WEHI_LVL3[$WEHI_SCORE]&lt;&lt;elseif $WEHI_LVL == 4&gt;&gt;$WEHI_LVL4[$WEHI_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1644,8 +1645,8 @@ Low trust scores multiply (1 or 3), high trust scores add (2 or 4).
 Deliver score-based content
 */
 
-&lt;&lt;set $CONSULT.WEHI to $WEHIWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Consult with the public" tags="" position="1126,212" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/images/Youth_and_Tobacco_Town_Hall_Meeting_6606_(7415655194).jpg style=&quot;width:450px;height:300px;&quot;&gt;
+&lt;&lt;set $CONSULT.WEHI to $WEHIWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Consult with the public" tags="" position="1126,214" size="100,100">&lt;span class=&quot;h1&quot;&gt;Information about consulting with the public&lt;/span&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/adaptations/consult.jpg style=&quot;width:450px;height:300px;&quot;&gt;
 |&#39;&#39;Description&#39;&#39;|&amp;emsp;|Hold public meetings/hui with iwi and stakeholders.|
 |&amp;emsp;| | |
 |&#39;&#39;Details&#39;&#39;|&amp;emsp;|This option allows you to share information about likely local climate change effects and adaptation options and to get input from community members on these potential options.|
@@ -1659,7 +1660,7 @@ Deliver score-based content
 |Cost|&amp;emsp;|$PUBLICCONSULTCOST k|
 
 Image credit: By The U.S. Food and Drug Administration - Youth and Tobacco Town Hall Meeting_6606, Public Domain, https://commons.wikimedia.org/w/index.php?curid=51271511</tw-passagedata><tw-passagedata pid="26" name="Taylor" tags="" position="1400,344" size="100,100">&lt;span class=&quot;h1&quot;&gt;Taylor the Tourist&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Taylor.jpg  style=&quot;width:300px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/taylor.JPG  style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Taylor&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#abouttaylor&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;abouttaylor&quot; class=&quot;hidden&quot;&gt;Taylor represents the average visitor to Seaview. She visits the village with her partner and two children to play on the beach and go surfing. An attractive beach for the children and a safe coastline for swimming and surfing are essential for a visit. 
 
 When they visit, Taylor and the family stay for five days at the motel for easy access to the beach. They buy provisions from the local supermarket and bakery, eat at the local food places and buy souvenirs and gifts at the local fancy goods and surf stores. 
@@ -1708,15 +1709,15 @@ In attendance:
 &lt;&lt;set $PUBLICCONSULTTEMP to false&gt;&gt;
 &lt;&lt;set $ACTIONLIST to []&gt;&gt;
 &lt;&lt;goto Decisions&gt;&gt;
-</tw-passagedata><tw-passagedata pid="29" name="Credits" tags="" position="20,259" size="100,100">This project was funded by:
+</tw-passagedata><tw-passagedata pid="29" name="Credits" tags="" position="21,258" size="100,100">This project was funded by:
 
-&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/NatHaz%20logo.png&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.naturalhazards.org.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/NatHaz%20logo.png&gt;&lt;/a&gt;
 
 Collaborating institutions:
 
-&lt;a href=&quot;http://www.niwa.co.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/NIWA_LOGO_2.png width=300 height=110&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.niwa.co.nz&quot;&gt;&lt;img src=https://adaptivefutures.github.io/seriousgames/images/NIWA_LOGO_2.png width=300 height=110&gt;&lt;/a&gt;
  
-&lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https://b-davies.github.io/games_images/landcare%20logo.PNG&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.landcareresearch.co.nz&quot;&gt;&lt;img src=https:/adaptivefutures.github.io/seriousgames/images/landcare%20logo.PNG&gt;&lt;/a&gt;
 
 
 Character avatars generated by [[This Person Does Not Exist|https://thispersondoesnotexist.com/]]
@@ -1735,7 +1736,7 @@ The panel at left keeps track of your progress through the game:
 [[Click here to start playing|Turn]]
 
 &lt;&lt;set $SCORE = ($KIM_SCORE + $FERN_SCORE + $WEHI_SCORE + $TAYLOR_SCORE + $RILEY_SCORE + $DANA_SCORE)&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Dana" tags="" position="1398,599" size="100,100">&lt;span class=&quot;h1&quot;&gt;Dana the Developer&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Dana.JPG style=&quot;width:300px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/dana.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Dana&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutdana&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutdana&quot; class=&quot;hidden&quot;&gt;Dana runs a coastal property development firm. He got into the business about ten years ago when she sold his family farm in Awhitu into several smaller parcels and discovered that he found the process very satisfying. He recently purchased a vacant lot situated behind Seaview’s main street but near enough to easily walk to the beach. Dana is getting ready to develop this property into high-end condos. He thinks Seaview is the perfect coastal community and is interested in buying more land for development in the area. Dana is a climate skeptic who does not consider climate change to be a lasting threat to his business. His motto is “If I build it, they will come”. &lt;/div&gt;
 
 Dana says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $DANA_LVL == 1&gt;&gt;$DANA_LVL1[$DANA_SCORE]&lt;&lt;elseif $DANA_LVL == 2&gt;&gt;$DANA_LVL2[$DANA_SCORE]&lt;&lt;elseif $DANA_LVL == 3&gt;&gt;$DANA_LVL3[$DANA_SCORE]&lt;&lt;elseif $DANA_LVL == 4&gt;&gt;$DANA_LVL4[$DANA_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1760,7 +1761,7 @@ Deliver score-based content
 */
 
 &lt;&lt;set $CONSULT.DANA to $DANAWANTS&gt;&gt;</tw-passagedata><tw-passagedata pid="32" name="Riley" tags="" position="1400,467" size="100,100">&lt;span class=&quot;h1&quot;&gt;Riley the Ratepayer&lt;/span&gt;
-&lt;img src=http://b-davies.github.io/games_images/avatars/Riley.JPG style=&quot;width:300px;height:300px;&quot;&gt;
+&lt;img src=http://adaptivefutures.github.io/seriousgames/images/avatars/riley.JPG style=&quot;width:300px;height:300px;&quot;&gt;
 &lt;&lt;click &quot;Click here to learn more about Riley&quot;&gt;&gt;&lt;&lt;toggleclass &quot;#aboutriley&quot; &quot;hidden&quot;&gt;&gt;&lt;&lt;/click&gt;&gt;&lt;div id=&quot;aboutriley&quot; class=&quot;hidden&quot;&gt;Riley is a retired dairy farmer who owns a large beachfront duplex. He lives in one half and rents out the other for much of the year. When it is not rented his children and grandchildren come to visit and stay in the duplex. Riley and his dog, Max, enjoy walking on the beach, fishing off the rocks, and visiting with neighbours at the local shops. He is Chair of his local Ratepayers &amp; Residents Association, where he regularly gets involved in local issues. He also volunteers his time as a Justice of the Peace at the local library. Riley takes at least one trip overseas every year, a luxury that the rented duplex makes possible. He is happy with his quiet lifestyle and expects to spend his final days living by the sea. &lt;/div&gt;
 
 Riley says: &lt;span class=&quot;speakingText&quot;&gt;&lt;&lt;if $RILEY_LVL == 1&gt;&gt;$RILEY_LVL1[$RILEY_SCORE]&lt;&lt;elseif $RILEY_LVL == 2&gt;&gt;$RILEY_LVL2[$RILEY_SCORE]&lt;&lt;elseif $RILEY_LVL == 3&gt;&gt;$RILEY_LVL3[$RILEY_SCORE]&lt;&lt;elseif $RILEY_LVL == 4&gt;&gt;$RILEY_LVL4[$RILEY_SCORE]&lt;&lt;endif&gt;&gt;&lt;/span&gt;
@@ -1803,92 +1804,24 @@ Deliver score-based content
 &lt;label&gt;&lt;&lt;radiobutton &quot;$NZRCP&quot; &quot;4&quot;&gt;&gt;RCP8.5 &lt;/label&gt;
 
 [[OK|Intro]]
-</tw-passagedata><tw-passagedata pid="34" name="Survey" tags="" position="204,554" size="100,100">&lt;html&gt;
-&lt;head&gt;
-&lt;style&gt;
-form * {
-  display: block;
-  margin: 10px;
-}
-&lt;/style&gt;
-
-&lt;script language=&quot;Javascript&quot; &gt;
-function download(filename, text) {
-  var pom = document.createElement(&#39;a&#39;);
-  pom.setAttribute(&#39;href&#39;, &#39;data:text/plain;charset=utf-8,&#39; + 
-
-encodeURIComponent(text));
-  pom.setAttribute(&#39;download&#39;, filename);
-
-  pom.style.display = &#39;none&#39;;
-  document.body.appendChild(pom);
-
-  pom.click();
-
-  document.body.removeChild(pom);
-}
-
-var str1 = Date.now();
-var str2 = &quot;.txt&quot;;
-var nam = str1 += str2
-&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-&lt;form onsubmit=&quot;download(nam, this[&#39;text1&#39;].value + this[&#39;text2&#39;].value)&quot;&gt;
-
-Post-game survey
-
-&lt;p&gt;Please select your sex:&lt;/p&gt;
-&lt;select name &quot;sex&quot;&gt;
-  &lt;option value=&quot;FEMALE&quot;&gt;Female&lt;/option&gt;
-  &lt;option value=&quot;MALE&quot;&gt;Male&lt;/option&gt;
-  &lt;option value=&quot;OTHER&quot;&gt;Other&lt;/option&gt;
-  &lt;option value=&quot;PREFER NOT TO SAY&quot;&gt;Prefer not to say&lt;/option&gt;
-&lt;/select&gt;
-  
-&lt;p&gt;Please select your age:&lt;/p&gt;
-&lt;select name=&quot;age&quot;&gt;
-  &lt;option value=&quot;1&quot;&gt;12 and under&lt;/option&gt;
-  &lt;option value=&quot;2&quot;&gt;13 - 17&lt;/option&gt;
-  &lt;option value=&quot;3&quot;&gt;18 - 24&lt;/option&gt;
-  &lt;option value=&quot;4&quot;&gt;25 - 44&lt;/option&gt;
-  &lt;option value=&quot;5&quot;&gt;45 - 64&lt;/option&gt;
-  &lt;option value=&quot;6&quot;&gt;65 and over&lt;/option&gt;
-&lt;/select&gt;
-
-
-&lt;p&gt;Were parts of the game fun for you? If so, please describe:&lt;/p&gt;
-&lt;textarea rows=3 cols=50 name=&quot;text1&quot;&gt;PLEASE WRITE ANSWER HERE. &lt;/textarea&gt;
-
-&lt;p&gt;Were parts of the game difficult for you? If so, please describe:&lt;/p&gt;
-&lt;textarea rows=3 cols=50 name=&quot;text2&quot;&gt;PLEASE WRITE ANSWER HERE. &lt;/textarea&gt;
-
-
-&lt;input type=&quot;submit&quot; value=&quot;SAVE&quot;&gt;
-&lt;/form&gt;
-
-
-&lt;/body&gt;
-&lt;/html&gt;</tw-passagedata><tw-passagedata pid="35" name="NoBizMove" tags="" position="962,636" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
+</tw-passagedata><tw-passagedata pid="34" name="NoBizMove" tags="" position="958,646" size="100,100">You have not consulted sufficiently with the local business community. You still need to consult with:
 
 &lt;&lt;if $KIM_CONSULT == false&gt;&gt;Kim the Fish and Chips Shop Owner&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $DANA_CONSULT == false&gt;&gt;Dana the Developer&lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="36" name="NoResMove" tags="" position="1138,647" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="35" name="NoResMove" tags="" position="1138,647" size="100,100">You have not consulted sufficiently with the local residential community. You still need to consult with:
 
 &lt;&lt;if $FERN_CONSULT == false&gt;&gt;Fern the Activist&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $WEHI_CONSULT == false&gt;&gt;Wehi the Resource Manager&lt;&lt;endif&gt;&gt;
 &lt;&lt;if $RILEY_CONSULT == false&gt;&gt;Riley the Ratepayer&lt;&lt;endif&gt;&gt;
 
-Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="37" name="VotedOut" tags="" position="402,201" size="100,100">The residents of Seaview are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|Summary]]
+Please revise your [[decisions|Reset]].</tw-passagedata><tw-passagedata pid="36" name="VotedOut" tags="" position="402,201" size="100,100">The residents of Seaview are fed up with the management of the committee. They have voted in a referendum to replace you. [[You&#39;ve reached the end of the game.|Summary]]
 
 &lt;div style=&quot;position:relative;width:267px;height:25px;overflow=hidden;&quot;&gt;
 	&lt;div style=&quot;position:absolute;top:-267px;left:-5px&quot;&gt;
 		&lt;iframe width=&quot;100&quot; height=&quot;100&quot; src=&quot;https://www.youtube.com/embed/yJxCdh1Ps48?autoplay=1&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="38" name="About Climate Change Scenarios" tags="" position="105,702" size="100,100">Climate projections are scientific statements, based on the output of global or regional climate models, about changes in aspects of the future climate. These projections are dependent on a set of influential conditions, such as changes in atmospheric greenhouse gases (GHGs). These are known as climate forcings.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="About Climate Change Scenarios" tags="" position="196,495" size="100,100">Climate projections are scientific statements, based on the output of global or regional climate models, about changes in aspects of the future climate. These projections are dependent on a set of influential conditions, such as changes in atmospheric greenhouse gases (GHGs). These are known as climate forcings.
  
 It is not possible to predict the future climate, because of the uncertainty around forcings (such as future emissions). Climate models instead provide model-derived descriptions of possible future climates under a given set of scenarios of climate forcings. The climate change models used in this game are based on [[IPCC Representative Concentration Pathways (RCPs)|http://www.mfe.govt.nz/publications/climate-change/coastal-hazards-and-climate-change-guidance-local-government]]. 
 
@@ -1902,7 +1835,7 @@ RCP 6.0 is a high-mid range emissions scenario (in terms of future carbon emissi
 RCP 8.5 is a scenario with very high greenhouse gas emissions.
  
 Current research suggests the two most likely pathways are RCP4.5 – in which emissions peak and then decline, with carbon dioxide concentration stabilising at about 540 ppm by the end of the twenty-first century, and RCP8.5 which represents a high-emission scenario, for which carbon dioxide concentration reaches about 940 ppm by the end of the twenty-first century. 
-</tw-passagedata><tw-passagedata pid="39" name="About the Financials of Adaptation" tags="" position="311,698" size="100,100">The community financial profile for Seaview is taken from the 2013 national census of New Zealand. The 2013 census reiterated previous census which found at the &#39;average&#39; household in New Zealand had 3 people and that - nationally - there are slightly more women than men in the country. The national proportions in the census were used to determine the village population (186 people in the village, of whom 94 are female and 92 are men).
+</tw-passagedata><tw-passagedata pid="38" name="About the Financials of Adaptation" tags="" position="350,499" size="100,100">The community financial profile for Seaview is taken from the 2013 national census of New Zealand. The 2013 census reiterated previous census which found at the &#39;average&#39; household in New Zealand had 3 people and that - nationally - there are slightly more women than men in the country. The national proportions in the census were used to determine the village population (186 people in the village, of whom 94 are female and 92 are men).
 
 Families are broken into lower income (earning on average only NZD$25k per year), middle income (earning on average NZD$75k per year) and higher income (earning on average NZD$150k per year). For simplicity, each household is assumed owns their own house. 
 
